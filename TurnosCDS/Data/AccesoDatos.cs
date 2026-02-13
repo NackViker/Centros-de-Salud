@@ -37,7 +37,7 @@ namespace Gestosoc.ConnexionDB
         //obtengo la cadena de conexion a la bd guardada en app.config
         public static string ObtenerCadenaConexion()
         {
-            string con;// =string.Empty;
+            string con;
             con = ConfigurationManager.ConnectionStrings["myConn"].ConnectionString;
             con = con.Trim();
 
@@ -123,10 +123,10 @@ namespace Gestosoc.ConnexionDB
                     dt.Dispose();
                     da.Dispose();
                 }
-                //else {
-                //frmViewData frm = new frmViewData();
-                //frm.vistas = "";
-                
+                else {
+                  frmViewData frm = new frmViewData();
+                  frm.vistas = "";
+                }
             }
 
             return EsConfigcmdok;
